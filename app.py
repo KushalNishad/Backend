@@ -17,10 +17,10 @@ def hello_cloud():
 @app.route('/members', methods=['GET'])
 def get_members():
 # Connect to the database 
-    conn = psycopg2.connect(database="database_name", 
-                            user="username", 
-                            password="password", 
-                            host="hostname", port="5432")
+    conn = psycopg2.connect(database="workshop_DB", 
+                            user="postgres", 
+                            password="postgres", 
+                            host="workshop-database-instance-1.cjcc6guiocb3.us-east-1.rds.amazonaws.com", port="5432")
   
     # create a cursor 
     cur = conn.cursor() 
