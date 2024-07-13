@@ -20,7 +20,8 @@ def get_members():
     conn = psycopg2.connect(database="workshop_DB", 
                             user="postgres", 
                             password="postgres", 
-                            host="workshop-database-instance-1.cjcc6guiocb3.us-east-1.rds.amazonaws.com", port="5432")
+                            #host="workshop-database-instance-1.cjcc6guiocb3.us-east-1.rds.amazonaws.com", port="5432")
+                            host="group3-workshop-pvt-db.cjcc6guiocb3.us-east-1.rds.amazonaws.com", port="5432")
   
     # create a cursor 
     cur = conn.cursor() 
